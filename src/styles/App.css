@@ -1,50 +1,139 @@
-.app {
+/* Basic student-made profile styling */
+body {
   font-family: Arial, sans-serif;
-  text-align: center;
+  background-color: #f0f8ff;
+  margin: 0;
   padding: 20px;
 }
 
-.header {
-  font-size: 2.5rem;
+/* Main container - simple centered box */
+body > div {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #363232;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Main title */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 32px;
   margin-bottom: 20px;
-  color: #333;
+  text-decoration: underline;
 }
 
-.profile-picture {
+/* Profile picture */
+img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  border: 3px solid #34495e;
 }
 
-.about-me, .skills {
-  margin: 20px 0;
+/* Section headings */
+h2 {
+  color: #34495e;
+  font-size: 24px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #34495e;
+  padding-bottom: 5px;
 }
 
-.skills ul {
+/* Info paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+/* Skills list */
+ul {
   list-style-type: none;
   padding: 0;
 }
 
-.skills li {
-  background-color: #f0f0f0;
-  margin: 5px auto;
-  padding: 10px;
-  width: 200px;
-  border-radius: 8px;
-}
-
-.social-button {
+ul li {
+  background-color: #87ceeb;
+  color: #000;
+  padding: 8px 15px;
+  margin: 5px 0;
+  border-radius: 20px;
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #4267B2;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
+  margin-right: 10px;
+  font-weight: bold;
 }
 
-.footer {
+/* Facebook link */
+a {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #e7f3ff;
+  border: 1px solid #1877f2;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #454040;
+  color: white;
+}
+
+/* Copyright text - make it smaller and less styled */
+body > div > p:last-child {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
   margin-top: 30px;
-  font-size: 0.9rem;
-  color: #999;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  background: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+/* Windows activation notice */
+body > div:last-child {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  max-width: 200px;
+  z-index: 100;
+}
+
+/* Simple responsive design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  body > div {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }

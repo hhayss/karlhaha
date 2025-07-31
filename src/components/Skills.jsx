@@ -6,6 +6,8 @@ function Skills() {
         <li>HTML</li>
         <li>CSS</li>
         <li>React</li>
+        <li>Selos</li>
+        <li>Eating</li>
       </ul>
     </div>
   );
